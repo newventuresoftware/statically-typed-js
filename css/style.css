@@ -1,0 +1,90 @@
+@font-face {
+	font-family: "Dax-Bold";
+	src: url("./../fonts/DaxComp-Bold.ttf");
+}
+
+h1:before, h2:before, h3:before, h4:before, h5:before {
+    content: "{";
+    color: #4DBEA1;
+}
+
+h1:after, h2:after, h3:after, h4:after, h5:after {
+    content: "}";
+    color: #4DBEA1;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+    font-family: "Dax-Bold";
+}
+
+.reveal .nvs-website-bar {
+    background-color: #4dbea1;
+    color: #fff;
+    line-height: 0.6em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5% 0 0.5% 0.5%;
+    font-size: 0.5em;
+}
+
+.reveal .nvs-website-bar .nvs-website-text {
+    font-weight: bold;
+}
+
+.brackets:before {
+    content: "{";
+}
+
+.brackets:after {
+    content: "}";
+}
+
+.reveal .no-border{
+    border: 0;
+    box-shadow: none;
+}
+
+.reveal .bg-transparent {
+    background: transparent;
+}
+
+.reveal .text-right {
+    text-align: right;
+}
+
+.reveal .text-left {
+    text-align: left;
+}
+
+.reveal .nvs-logo-container {
+    padding-left: 15px;
+}
+
+.reveal #speaker-info {
+    font-size: 30px;
+}
+
+.reveal #speaker-info .speaker-img-container {
+    margin-right: 25px;
+}
+
+.reveal #speaker-info .speaker-img-container, .speaker-contact-info {
+    display: inline-block;
+}
+
+.reveal .color-white * {
+    color: #fff;
+}
+
+.reveal .color-red * {
+    color: red;
+}
+
+.reveal .color-yellow * {
+    color: yellow;
+}
+
+.reveal .color-green * {
+    color: green;
+}
