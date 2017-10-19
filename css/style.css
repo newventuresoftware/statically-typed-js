@@ -88,3 +88,11 @@ h1:after, h2:after, h3:after, h4:after, h5:after {
 .reveal .color-green * {
     color: green;
 }
+
+.reveal .ts-highlight {
+    color: #5eaaed;
+}
+
+.reveal .flow-highlight {
+    color: #e3bd3d;
+}

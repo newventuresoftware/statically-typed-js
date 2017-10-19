@@ -186,9 +186,85 @@ const instance: MyInterface = ...</code></pre>
                         <h4>EcmaScript Next</h4>
                     </section>
                     <section>
+                        <h4 class="text-right">More than a language</h4>
+                        <p>TypeScript also provides tooling and language services for autocompletion, code navigation and refactoring.</p>
+                    </section>
+                    <section>
+                        <h3>tssserver</h3>
+                        <p>Plugins for:</p>
+                        <ul>
+                            <li>Tide(Emacs)</li>
+                            <li>VS Code TypeScript Support</li>
+                            <li>TypeScript-Sublime-Plugin(Sublime Text)</li>
+                        </ul>
+                    </section>
+                    <section>
                         <h3>TypeScript and Angular</h3>
                         <img src="./img/logo-angular-typescript-schulung.png" class="no-border" />
                     </section>
+                </section>
+                <!-- Flow -->
+                <section>
+                    <section data-background="#2E343A">
+                        <img alt="" src="./img/flow-logo.png" class="no-border" />
+                    </section>
+                    <section data-background="#2E343A">
+                        <p>Flow is a <strong style="color: #E3BD3D">static type checker</strong> for JavaScript.</p>
+                    </section>
+                    <section data-background="#2E343A">
+                        <p>Flow checks your code for errors through <strong style="color: #E3BD3D">static type annotations.</strong></p>
+                        <pre class="fragment"><code class="js">// @flow
+function square(n: number): number {
+    return n * n;
+}
+
+square('2'); // Error!</code></pre>
+                    </section>
+                    <section data-background="#2E343A">
+                        <p>A lot of the time, <strong style="color: #E3BD3D">Flow</strong> can understand your code without any types at all.</p>
+                            <div class="fragment">
+                                <pre><code class="js">// @flow
+function square(n) {
+    return n * n; // Error!
+}
+
+square('2');</code></pre>
+                            <p><em>TypeScript doesn't catch this.</em></p>
+                        </div>
+                    </section>
+                    <section>
+                        <p>Type annotations can also be written as comments.</p>
+                        <pre><code class="js">// @flow
+function strLen(x) /* : string */ {
+  return x.length;
+}
+
+strLen('Hello, world!');</code></pre>
+                    </section>
+                    <section data-background="#2E343A">
+                        <p><strong class="flow-highlight">Flow</strong> only does type checking and relies on <strong class="flow-highlight">Babel</strong> or <strong class="flow-highlight">flow-remove-types</strong> or some other tool to remove type annotations.</p>
+                        <p><strong class="ts-highlight">TypeScript</strong> implements both a type checker and a transpiler that emits plain JavaScript.</p>
+                    </section>
+                    
+                </section>
+                <section class="present">
+                    <h3>Should I use a type checker?</h3>
+                    <ul>
+                        <li class="fragment visible" data-fragment-index="0"><a target="_blank" href="http://danluu.com/empirical-pl/">there seems to be little or no impact on productivity</a>
+                        </li><li class="fragment visible" data-fragment-index="1">initial effort to introduce a checker is low
+                        </li><li class="fragment visible" data-fragment-index="2">but: <span class="fragment visible" data-fragment-index="3">a type system is a complex thing</span>
+                        </li></ul>
+                </section>
+                <section>
+                    <h3>My recommendation</h3>
+                    <ul>
+                        <li class="fragment visible" data-fragment-index="1">if your project does not live for long: <em class="fragment visible" data-fragment-index="2"><strong>no</strong></em>
+                        </li><li class="fragment visible" data-fragment-index="3">if your project is really simple: <em class="fragment visible" data-fragment-index="4"><strong>no</strong></em>
+                        </li><li class="fragment visible" data-fragment-index="5">if there is a chance you will need to refactor the thing: <em class="fragment visible" data-fragment-index="6"><strong>yes</strong></em>
+                        </li><li class="fragment visible" data-fragment-index="7">if your system is very important or even crucial for the success of your company: <em class="fragment visible" data-fragment-index="8"><strong>yes</strong></em>
+                        </li><li class="fragment visible" data-fragment-index="9">if people enter or leave your team frequently: <em class="fragment visible" data-fragment-index="10"><strong>yes</strong></em>
+                        </li>
+                    </ul>
                 </section>
                 <section id="questions">
                     <h3>Questions?</h3>
