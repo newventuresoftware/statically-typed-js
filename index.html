@@ -69,7 +69,7 @@
                         <img src="./img/breaking-the-ice.jpg" width="525" />
                     </section>
                     <section>
-                        
+                        <p>...</p>
                     </section>
                 </section>
                 <section id="agenda" class="color-white" data-background-image="./img/school-board.jpg">
@@ -81,27 +81,43 @@
                         <li class="fragment">Q&A</li>
                     </ul>
                 </section>
+                <!-- Type Systems -->
+                <section>
+                    <section>
+                        <p><em>What is a Type System?</em></p>
+                    </section>
+                    <section data-background="#fff">
+                        <img alt="" src="./img/hindley-milner.png" class="no-border" />
+                    </section>
+                    <section>
+                        <h4 class="text-right">What is a Type System?</h4>
+                        <p><strong>Set of rules</strong> that assigns a property called type to the various constructs of a computer program, such as variables, expressions, functions or modules.</p>
+                    </section>
+                    <section>
+                        <p>When developers argue about Static vs Dynamic Typing.</p>
+                        <video src="./img/wwe-fight.mp4" autoplay loop width="500"></video>
+                    </section>
+                </section>
                 <!-- TypeScript -->
                 <section>
                     <section id="typescript" data-background="./img/type-script-bg.jpeg" data-background-transition="zoom"></section>
-                    <section data-background-color="#007ACC">
+                    <section id="ts-overview" data-background-color="#007ACC">
                         <h4 class="text-right">What is TypeScript?</h4>
                         <ul>
                             <li>Language created by <code>Microsoft</code>.</li>
                             <li>Has optional <code>static typing</code>.</li>
-                            <li>Inherits concepts from <code>C#</code>.</li>
-                            <li>Can use type definitions for <code>intellisense</code>.</li>
-                            <li>Can use <code>JavaScript</code> libraries.</li>
                             <li><strong>Compiles to JavaScript</strong>.</li>
+                            <li>Inherits concepts from <code>C#</code>.</li>
+                            <li>Provides language service API.</li>
                         </ul>
                     </section>
-                    <section>
+                    <section id="ts-quote">
                         <p><em>It's always better to catch errors at compile time rather that at runtime.</em></p>
                     </section>
                     <section data-background="#000">
                         <img alt="" src="./img/corleone-runtime.jpg" width="400" />
                     </section>
-                    <section data-background-color="#007ACC">
+                    <section id="ts-benefits" data-background-color="#007ACC">
                         <h4 class="text-right">Benefits of TypeScript</h4>
                         <ul>
                             <li>Due to <code>static typing</code>, it's more <strong>predictable</strong>.</li>
@@ -109,22 +125,22 @@
                             <li>Due to <code>compilation step</code>, some errors are caught <strong>compile-time</strong>, not run-time.</li>
                         </ul>
                     </section>
-                    <section id="typescript-venn">
+                    <section id="ts-venn">
                         <img src="./img/typescript-venn.png" class="no-border" width="300" />
                     </section>
-                    <section>
+                    <section id="ts-install">
                         <h4 class="text-right">Installing TypeScript</h4>
                         <div style="height: 50px"></div>
                         <p>Using the Node Package Manager.</p>
                         <pre><code class="bash">npm install --global typescript</code></pre>
                         <div style="height: 50px"></div>
                     </section>
-                    <section>
+                    <section id="ts-compile">
                         <h4 class="text-right">Compiling TypeScript</h4>
                         <p>TypeScript is written in <strong>.ts</strong> files, which can't be used directly in the browser.<br/>It need to be translated to vanilla .js first.</p>
                         <pre><code class="bash">tsc main.ts</code></pre>
                     </section>
-                    <section>
+                    <section id="ts-config">
                         <h4 class="text-right">tsconfig.json</h4>
                         <p>Specifies the way TS is compiled.<br/>(autogeneratable with tsc --init)</p>
                         <pre><code class="json">{
@@ -140,7 +156,7 @@
                     <section id="ts-summary" data-background="./img/ts.png" class="color-white">
                         <h3>Language Features</h3>
                     </section>
-                    <section data-background="#000">
+                    <section id="ts-say-hello" data-background="#000">
                         <img alt="" src="./img/montanta-type-checker.jpg" width="500" class="no-border" />
                     </section>
                     <section data-background-color="#007ACC" class="color-white">
@@ -149,6 +165,7 @@
                     </section>
                     <section id="d-ts-files">
                         <h3>Type Definition Files</h3>
+                        <p>lib.d.ts</p>
                     </section>
                     <section id="types-checker-demo" data-background-color="black">
                         <h3>Live Demo</h3>
@@ -170,26 +187,26 @@
 const instance: MyInterface = ...</code></pre>
                         </div>
                     </section>
-                    <section data-background="./img/ts.png" class="color-white">
+                    <section id="ts-generics" data-background="./img/ts.png" class="color-white">
                         <h3>Generics</h3>
                         <p>
                             <em>Class&lt;T&gt;</em>
                         </p>
                     </section>
-                    <section data-background="./img/ts.png" class="color-white">
+                    <section id="ts-modules" data-background="./img/ts.png" class="color-white">
                         <h3>Modules</h3>
                         <p>
                             <em>import / export</em>
                         </p>
                     </section>
-                    <section data-background="./img/ts.png" class="color-white">
-                        <h4>EcmaScript Next</h4>
+                    <section id="ts-esnext" data-background="./img/ts.png" class="color-white">
+                        <h3>EcmaScript Next</h3>
                     </section>
-                    <section>
+                    <section id="ts-lang-services">
                         <h4 class="text-right">More than a language</h4>
                         <p>TypeScript also provides tooling and language services for autocompletion, code navigation and refactoring.</p>
                     </section>
-                    <section>
+                    <section id="ts-server">
                         <h3>tssserver</h3>
                         <p>Plugins for:</p>
                         <ul>
@@ -198,7 +215,7 @@ const instance: MyInterface = ...</code></pre>
                             <li>TypeScript-Sublime-Plugin(Sublime Text)</li>
                         </ul>
                     </section>
-                    <section>
+                    <section id="ts-angular">
                         <h3>TypeScript and Angular</h3>
                         <img src="./img/logo-angular-typescript-schulung.png" class="no-border" />
                     </section>
@@ -210,6 +227,13 @@ const instance: MyInterface = ...</code></pre>
                     </section>
                     <section data-background="#2E343A">
                         <p>Flow is a <strong style="color: #E3BD3D">static type checker</strong> for JavaScript.</p>
+                    </section>
+                    <section id="flow-about">
+                        <ul>
+                            <li>Developed by Facebook</li>
+                            <li>Not a compiler, but checker</li>
+                            <li>Goal: No runtime errors</li>
+                        </ul>
                     </section>
                     <section data-background="#2E343A">
                         <p>Flow checks your code for errors through <strong style="color: #E3BD3D">static type annotations.</strong></p>
@@ -229,7 +253,7 @@ function square(n) {
 }
 
 square('2');</code></pre>
-                            <p><em>TypeScript doesn't catch this.</em></p>
+                                <p style="font-size: 0.8em"><em>TypeScript doesn't catch this without the <strong>"noImplicitAny"</strong> flag.</em></p>
                         </div>
                     </section>
                     <section>
@@ -245,7 +269,6 @@ strLen('Hello, world!');</code></pre>
                         <p><strong class="flow-highlight">Flow</strong> only does type checking and relies on <strong class="flow-highlight">Babel</strong> or <strong class="flow-highlight">flow-remove-types</strong> or some other tool to remove type annotations.</p>
                         <p><strong class="ts-highlight">TypeScript</strong> implements both a type checker and a transpiler that emits plain JavaScript.</p>
                     </section>
-                    
                 </section>
                 <section class="present">
                     <h3>Should I use a type checker?</h3>
