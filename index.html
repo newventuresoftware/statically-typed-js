@@ -94,8 +94,21 @@
                         <p><strong>Set of rules</strong> that assigns a property called type to the various constructs of a computer program, such as variables, expressions, functions or modules.</p>
                     </section>
                     <section>
-                        <p>When developers argue about Static vs Dynamic Typing.</p>
-                        <video src="./img/wwe-fight.mp4" autoplay loop width="500"></video>
+                        <h3>Nominal vs Structural</h3>
+                        <div style="font-size: 0.8em">
+                            <p><strong>Nominal</strong>: compatibility and equivalence of data types is determined by explicit declarations and/or the name of the types.</p>
+                            <p><strong>Structural</strong>: type compatibility and equivalence are determined by the type's actual structure or definition.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Static vs Dynamic</h3>
+                        <div style="font-size: 0.8em">
+                            <p><strong>Static type checking</strong> is the process of verifying the type safety of a program based on analysis of a program's text (source code).</p>
+                            <p><strong>Dynamic type checking</strong> is the process of verifying the type safety of a program at runtime.</p>
+                        </div>
+                    </section>
+                    <section data-background="#000">
+                        <img src="./img/corleone-runtime.jpg" width="400" />
                     </section>
                 </section>
                 <!-- TypeScript -->
@@ -113,9 +126,6 @@
                     </section>
                     <section id="ts-quote">
                         <p><em>It's always better to catch errors at compile time rather that at runtime.</em></p>
-                    </section>
-                    <section data-background="#000">
-                        <img alt="" src="./img/corleone-runtime.jpg" width="400" />
                     </section>
                     <section id="ts-benefits" data-background-color="#007ACC">
                         <h4 class="text-right">Benefits of TypeScript</h4>
@@ -137,7 +147,7 @@
                     </section>
                     <section id="ts-compile">
                         <h4 class="text-right">Compiling TypeScript</h4>
-                        <p>TypeScript is written in <strong>.ts</strong> files, which can't be used directly in the browser.<br/>It need to be translated to vanilla .js first.</p>
+                        <p>TypeScript is written in <strong>.ts</strong> files, which can't be used directly in the browser.<br/>It need to be compiled to vanilla .js first.</p>
                         <pre><code class="bash">tsc main.ts</code></pre>
                     </section>
                     <section id="ts-config">
@@ -156,25 +166,38 @@
                     <section id="ts-summary" data-background="./img/ts.png" class="color-white">
                         <h3>Language Features</h3>
                     </section>
-                    <section id="ts-say-hello" data-background="#000">
-                        <img alt="" src="./img/montanta-type-checker.jpg" width="500" class="no-border" />
-                    </section>
-                    <section data-background-color="#007ACC" class="color-white">
+                    <section data-background-color="#007ACC">
                         <h3>Static Type System</h3>
                         <p><em>&ldquo;Strongly typed languages reduce bugs by 15%.&rdquo;</em></p>
                     </section>
-                    <section id="d-ts-files">
-                        <h3>Type Definition Files</h3>
-                        <p>lib.d.ts</p>
+                    <section id="basic-types">
+                        <h3>Basic Types</h3>
+                        <p>predefined in the language:</p>
+                        <p><code>number, string, boolean, Array, enum, undefined, null, tuples, any, void, never</code></p>
                     </section>
-                    <section id="types-checker-demo" data-background-color="black">
+                    <section id="ts-say-hello" data-background="#000">
                         <h3>Live Demo</h3>
-                        <img alt="" src="./img/code-or-didnt-happen.jpg" />
+                        <img alt="" src="./img/montanta-type-checker.jpg" width="400" class="no-border" />
                     </section>
-                    <section data-background="./img/ts.png" class="color-white">
+                    <section id="complex-types">
+                        <h3>Complex Types</h3>
+                        <p>created by the developer</p>
+                    </section>
+                    <section data-background-color="#007ACC">
                         <h3>Classes</h3>
+                        <pre><code class="js">class Employee {
+    name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    greet(): string {
+        return `Hi, my name is #{this.name}`;
+    }
+}</code></pre>
                     </section>
-                    <section id="ts-interfaces" data-background="#2D7ACB" class="color-white">
+                    <section id="ts-interfaces" data-background-color="#007ACC">
                         <h3>Interfaces</h3>
                         <div>
                             <pre><code class="ts">interface MyInterface {
@@ -187,11 +210,19 @@
 const instance: MyInterface = ...</code></pre>
                         </div>
                     </section>
+                    <section class="live-demo" data-background-color="black">
+                        <h3>Live Demo</h3>
+                        <img alt="" src="./img/code-or-didnt-happen.jpg" />
+                    </section>
                     <section id="ts-generics" data-background="./img/ts.png" class="color-white">
                         <h3>Generics</h3>
                         <p>
                             <em>Class&lt;T&gt;</em>
                         </p>
+                    </section>
+                    <section class="live-demo" data-background-color="black">
+                        <h3>Live Demo</h3>
+                        <img alt="" src="./img/code-or-didnt-happen.jpg" />
                     </section>
                     <section id="ts-modules" data-background="./img/ts.png" class="color-white">
                         <h3>Modules</h3>
@@ -199,8 +230,16 @@ const instance: MyInterface = ...</code></pre>
                             <em>import / export</em>
                         </p>
                     </section>
+                    <section class="live-demo" data-background-color="black">
+                        <h3>Live Demo</h3>
+                        <img alt="" src="./img/code-or-didnt-happen.jpg" />
+                    </section>
                     <section id="ts-esnext" data-background="./img/ts.png" class="color-white">
                         <h3>EcmaScript Next</h3>
+                    </section>
+                    <section class="live-demo" data-background-color="black">
+                        <h3>Live Demo</h3>
+                        <img alt="" src="./img/code-or-didnt-happen.jpg" />
                     </section>
                     <section id="ts-lang-services">
                         <h4 class="text-right">More than a language</h4>
@@ -214,6 +253,10 @@ const instance: MyInterface = ...</code></pre>
                             <li>VS Code TypeScript Support</li>
                             <li>TypeScript-Sublime-Plugin(Sublime Text)</li>
                         </ul>
+                    </section>
+                    <section id="d-ts-files">
+                        <h3>Type Definition Files</h3>
+                        <p>lib.d.ts</p>
                     </section>
                     <section id="ts-angular">
                         <h3>TypeScript and Angular</h3>
@@ -229,6 +272,7 @@ const instance: MyInterface = ...</code></pre>
                         <p>Flow is a <strong style="color: #E3BD3D">static type checker</strong> for JavaScript.</p>
                     </section>
                     <section id="flow-about">
+                        <h3>Flow</h3>
                         <ul>
                             <li>Developed by Facebook</li>
                             <li>Not a compiler, but checker</li>
@@ -236,7 +280,7 @@ const instance: MyInterface = ...</code></pre>
                         </ul>
                     </section>
                     <section data-background="#2E343A">
-                        <p>Flow checks your code for errors through <strong style="color: #E3BD3D">static type annotations.</strong></p>
+                        <p><strong class="flow-highlight">Flow</strong> checks your code for errors through <strong style="color: #E3BD3D">static type annotations.</strong></p>
                         <pre class="fragment"><code class="js">// @flow
 function square(n: number): number {
     return n * n;
@@ -265,12 +309,22 @@ function strLen(x) /* : string */ {
 
 strLen('Hello, world!');</code></pre>
                     </section>
+                    <section id="flow-demo" data-background-color="black">
+                        <h3>Live Demo</h3>
+                        <a href="https://flow.org/try/" target="_blank">
+                            <img alt="" src="./img/code-or-didnt-happen.jpg" />
+                        </a>
+                    </section>
                     <section data-background="#2E343A">
                         <p><strong class="flow-highlight">Flow</strong> only does type checking and relies on <strong class="flow-highlight">Babel</strong> or <strong class="flow-highlight">flow-remove-types</strong> or some other tool to remove type annotations.</p>
-                        <p><strong class="ts-highlight">TypeScript</strong> implements both a type checker and a transpiler that emits plain JavaScript.</p>
+                        <p><strong class="ts-highlight">TypeScript</strong> implements both a type checker and a compiler that emits plain JavaScript.</p>
                     </section>
                 </section>
-                <section class="present">
+                <section>
+                    <p>When developers argue about Static vs Dynamic Typing.</p>
+                    <video src="./img/wwe-fight.mp4" autoplay loop width="500"></video>
+                </section>
+                <section>
                     <h3>Should I use a type checker?</h3>
                     <ul>
                         <li class="fragment visible" data-fragment-index="0"><a target="_blank" href="http://danluu.com/empirical-pl/">there seems to be little or no impact on productivity</a>
