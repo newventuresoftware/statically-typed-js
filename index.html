@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Slides</title>
+		<title>Statically Typed JavaScript</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/simple.css">
@@ -60,18 +60,22 @@
                     <section data-background="./img/nvs-intro.PNG"></section>
                     <section id="nvs-partners" data-background="./img/nvs-partners.PNG"></section>
                 </section>
-                <section id="icebreaker">
-                    <section>
-                        <img src="./img/stage-fright.jpg" class="no-border" />
-                    </section> 
-                    <section>
-                        <h4>Breaking the Ice</h4>
-                        <img src="./img/breaking-the-ice.jpg" width="525" />
-                    </section>
-                    <section>
-                        <p>...</p>
-                    </section>
-                </section>
+                <section data-background-color="#000">
+                    <p><em><strong>Say NO to the slow and painful</em></strong></p>
+                    <img alt="" src="./img/death-by-ppt.jpg" width="500" class="no-border" />
+                </section>                
+                <!-- <section id="icebreaker">
+                     <section>
+                     <img src="./img/stage-fright.jpg" class="no-border" />
+                     </section> 
+                     <section>
+                     <h4>Breaking the Ice</h4>
+                     <img src="./img/breaking-the-ice.jpg" width="525" />
+                     </section>
+                     <section>
+                     <p>...</p>
+                     </section>
+                </section> -->
                 <section id="agenda" class="color-white" data-background-image="./img/school-board.jpg">
                     <h3>Agenda</h3>
                     <ul>
@@ -106,6 +110,9 @@
                             <p><strong>Static type checking</strong> is the process of verifying the type safety of a program based on analysis of a program's text (source code).</p>
                             <p><strong>Dynamic type checking</strong> is the process of verifying the type safety of a program at runtime.</p>
                         </div>
+                    </section>
+                    <section>
+                        <img alt="" src="./img/type-checking.jpg" class="no-border" width="650" />
                     </section>
                     <section data-background="#000">
                         <img src="./img/corleone-runtime.jpg" width="400" />
@@ -177,7 +184,9 @@
                     </section>
                     <section id="ts-say-hello" data-background="#000">
                         <h3>Live Demo</h3>
-                        <img alt="" src="./img/montanta-type-checker.jpg" width="400" class="no-border" />
+                        <a href="https://www.typescriptlang.org/play/" target="_blank">
+                            <img alt="" src="./img/montanta-type-checker.jpg" width="400" class="no-border" />
+                        </a>
                     </section>
                     <section id="complex-types">
                         <h3>Complex Types</h3>
@@ -219,6 +228,7 @@ const instance: MyInterface = ...</code></pre>
                         <p>
                             <em>Class&lt;T&gt;</em>
                         </p>
+                        <p>Creating a component that can work over a variety of types rather than a single one.</p>
                     </section>
                     <section class="live-demo" data-background-color="black">
                         <h3>Live Demo</h3>
@@ -295,10 +305,10 @@ square('2'); // Error!</code></pre>
                             <div class="fragment">
                                 <pre><code class="js">// @flow
 function square(n) {
-    return n * n; // Error!
+    return n * n;
 }
 
-square('2');</code></pre>
+square('2'); // Error!</code></pre>
                                 <p style="font-size: 0.8em"><em>TypeScript doesn't catch this without the <strong>"noImplicitAny"</strong> flag.</em></p>
                         </div>
                     </section>
@@ -322,7 +332,7 @@ strLen('Hello, world!');</code></pre>
                         <p><strong class="ts-highlight">TypeScript</strong> implements both a type checker and a compiler that emits plain JavaScript.</p>
                     </section>
                 </section>
-                <section>
+                <section data-background="#000">
                     <p>When developers argue about Static vs Dynamic Typing.</p>
                     <video src="./img/wwe-fight.mp4" autoplay loop width="500"></video>
                 </section>
